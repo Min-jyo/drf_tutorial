@@ -27,11 +27,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'members.User'
 
 # Application definition
 
 INSTALLED_APPS = [
-    # 프로젝트에 snippets 어플리케이션 추가
+
+    'members.apps.MembersConfig',
     'snippets.apps.SnippetsConfig',
 
     'django.contrib.admin',
